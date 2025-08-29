@@ -21,20 +21,20 @@
 
 ### Key Terms and Definitions
 
-| Term             | Definition                                      | Example / Notes                          |
-|------------------|--------------------------------------------------|-------------------------------------------|
-| Widget           |                                                  |                                           |
-| MaterialApp      |                                                  |                                           |
-| Scaffold         |                                                  |                                           |
-| StatelessWidget  |                                                  |                                           |
-| StatefulWidget   |                                                  |                                           |
-| Navigator        |                                                  |                                           |
-| AppBar           |                                                  |                                           |
-| Column           |                                                  |                                           |
-| Row              |                                                  |                                           |
-| Container        |                                                  |                                           |
-| Text             |                                                  |                                           |
-| Image.network    |                                                  |                                           |
+| Term             | Definition                                             | Example / Notes                           |
+|------------------|--------------------------------------------------------|-------------------------------------------|
+| Widget           | basic blocking of a flutter app everything is a widget.|Text, Image, container,column              |
+| MaterialApp      | the root of the app. Sets up the themes                |found main dart                            |
+| Scaffold         | provides basic visual layouts                          |each screen uses it                        |
+| StatelessWidget  | predefined paths to navigate between screens           | used on my home page                      |
+| StatefulWidget   | a widget that can change over time                     | most of the screeb files                  |
+| Navigator        |                                                        |navigator,puhNamed(context, '/page2');     |
+| AppBar           | Top navigation bar                                     |title of each page appears                 |
+| Column           | vertical layout                                        |                                           |
+| Row              | horizontal layout                                      |                                           |
+| Container        | wraps content with padding margin or color             |                                           |
+| Text             | displays text                                          |                                           |
+| Image.network    | displays images from a URL                             |                                           |
 
 ---
 
