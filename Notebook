@@ -205,37 +205,28 @@ Keep it simple, consistent, and clear.
 ## Flutter Definitions
 More flutter Definitions 
 | Term | Definition and Description | Base Structure | Real Life Example | App Example |
-
-|------|----------------------------|----------------|-------------------|-------------|
-
+|------|----------------------------|----------------|-------------------|-------------|\
 |variable      | A function that runs when your app starts. It tells Flutter what app to show. | `void main() => runApp(MyApp());` |  | in main dart, void main(=> runApp(MyPortfolioApp());|
 |      | The widget that sets up your whole app’s look and navigation. | `MaterialApp(...)` |main.dart, return MaterialApp(debugShowCheckedModeBanner : false, title: "TSA Portfolio', and more |  |
-|      | A widget that gives you the basic layout: background, navigation bar, floating button, etc. | `Scaffold(...)` |  | in showcase.dart, return Scaffold(
-      body: Column(
- mainAxisAlignment: MainAxisAlignment.start,
-        children: [ |
-|      | A widget that holds and displays your content in a straight line from top to bottom. | `Column(...)` |  | in showcase.dart,  child: Column(
-        children: [  |
-|      | A widget that shows things side-by-side. | `Row(...)` |  |InfoCard.dart, child: Row(
-        children: [  |
-|      | A box that holds other widgets. You can add color, padding, borders, or size. | `Container(...)` |  |In InfoCard.dart,   return Container(
-      margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
-      padding: const EdgeInsets.all(12),
-      decoration: BoxDecoration(  |
+|      | A widget that gives you the basic layout: background, navigation bar, floating button, etc. | `Scaffold(...)` |  | in showcase.dart, return Scaffold( body: Column( mainAxisAlignment: MainAxisAlignment.start, children: [ |
+|      | A widget that holds and displays your content in a straight line from top to bottom. | `Column(...)` |  | in showcase.dart,  child: Column(        children: [  |
+|      | A widget that shows things side-by-side. | `Row(...)` |  |InfoCard.dart, child: Row(       children: [  |
+|      | A box that holds other widgets. You can add color, padding, borders, or size. | `Container(...)` |  |In InfoCard.dart,   return Container(  margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 16), padding: const EdgeInsets.all(12), decoration: BoxDecoration(  |
 |      | A widget to display text on the screen. | `Text('Hello')` |  |  |
-
-|      | A widget to show an image using a link from the internet. | `Image.network('https://...')` |  |In home.dart,child: Image.network(
-                'https://placedog.net/640/480?random',
+|      | A widget to show an image using a link from the internet. | `Image.network('https://...')` |  |In home.dart,child: Image.network( 'https://placedog.net/640/480?random',
                 fit: BoxFit.cover,
               ),
             ),  |
-|      | A clickable button that floats above content. You choose what happens when it's clicked. | `ElevatedButton(onPressed: ..., child: ...)` |  |  |
-
-|      | The code that gets run when a button is tapped or something happens. | `onPressed: () => doSomething()` |  |  |
-
-|      | A class that creates widgets that never change. Good for static screens. | `class HomeScreen extends StatelessWidget` |  |  |
-
-|      | A class for widgets that can change while the app is running. | `class MyWidget extends StatefulWidget` |  |  |
+|      | A clickable button that floats above content. You choose what happens when it's clicked. | `ElevatedButton(onPressed: ..., child: ...)` |  | ElevatedButton(
+              onPressed: () => Navigator.pushNamed(context, '/background'),
+              child: const Text('Next'),
+            ),
+          ], |
+|      | The code that gets run when a button is tapped or something happens. | `onPressed: () => doSomething()` |  | onPressed: () => Navigator.pushNamed(context, '/background'),child: const Text('Next'),  |
+|      | A class that creates widgets that never change. Good for static screens. | `class HomeScreen extends StatelessWidget` |  |class HomeScreen extends StatelessWidget {
+  const HomeScreen({super.key});
+|
+|      | A class for widgets that can change while the app is running. | `class MyWidget extends StatefulWidget` |  |not found in app  |
 
 |      | Lets you move from one screen to another using route names. | `Navigator.pushNamed(context, '/about')` |  |  |
 
